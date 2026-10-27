@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bellas076-design.github.io/glow-on-a-budget/sitemap.xml
