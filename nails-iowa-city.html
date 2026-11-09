@@ -1,234 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cheap Nails in Iowa City: Gel Manicure Prices | Glow on a Budget</title>
-<meta name="description" content="Cheap nails in Iowa City, compared. Gel manicure prices, student days and walk-in nail salons near campus, all in one place.">
-<style>
-*{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:#fffafb;color:#2b2230;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;font-size:17px;line-height:1.6}
-a{color:#a3315c}
-a:hover{color:#6e1e3d}
-.notice{background:#2b2230;color:#fff;font-size:14px;text-align:center;padding:10px 16px;margin:0}
-.site-header{background:#fbeef2;border-bottom:1px solid #ecd6df}
-.wrap{max-width:980px;margin:0 auto;padding:0 16px}
-.brand{display:block;padding:20px 0 4px;text-decoration:none;color:#2b2230}
-.brand-name{font-family:Georgia,"Times New Roman",serif;font-size:28px;font-weight:bold;color:#a3315c}
-.brand-tag{display:block;font-size:15px;color:#6b5f6f}
-nav ul{list-style:none;margin:0;padding:12px 0 16px;display:flex;flex-wrap:wrap;gap:8px}
-nav a{display:block;padding:8px 14px;border-radius:999px;background:#fff;border:1px solid #e4c6d2;text-decoration:none;color:#2b2230;font-size:15px}
-nav a:hover{border-color:#a3315c;color:#a3315c}
-nav a[aria-current="page"]{background:#a3315c;color:#fff;border-color:#a3315c}
-main{padding:24px 0 40px}
-h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.25;color:#2b2230}
-h1{font-size:34px;margin:8px 0 12px}
-h2{font-size:25px;margin:40px 0 12px;padding-top:16px;border-top:2px solid #f3dde6}
-h3{font-size:19px;margin:20px 0 6px}
-.lede{font-size:19px;color:#4a3f4e}
-.updated{font-size:14px;color:#6b5f6f}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin:16px 0}
-.card{background:#fff;border:1px solid #ecd6df;border-radius:12px;padding:18px}
-.card h3{margin-top:0}
-.price-tag{display:inline-block;background:#fbeef2;color:#a3315c;font-weight:bold;border-radius:6px;padding:2px 8px;font-size:15px}
-.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #ecd6df;border-radius:12px;background:#fff;margin:16px 0}
-table{border-collapse:collapse;width:100%;min-width:680px;font-size:15px}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid #f3e4ea;vertical-align:top}
-th{background:#fbeef2;font-size:14px}
-tr:last-child td{border-bottom:none}
-.scroll-hint{display:none;font-size:14px;color:#6b5f6f;margin:0}
-.tip{background:#fff7e0;border-left:4px solid #e0a82e;padding:14px 16px;border-radius:0 10px 10px 0;margin:20px 0}
-.button{display:inline-block;background:#a3315c;color:#fff;text-decoration:none;padding:10px 18px;border-radius:999px;font-weight:bold;margin-top:6px}
-.button:hover{background:#6e1e3d;color:#fff}
-.faq dt{font-weight:bold;margin-top:16px}
-.faq dd{margin:4px 0 0}
-.hero-img{display:block;width:100%;max-width:640px;height:auto;border-radius:12px;margin:18px 0}
-.site-footer{background:#2b2230;color:#eadde3;padding:28px 0;font-size:15px}
-.site-footer a{color:#f7c3d6}
-.site-footer ul{list-style:none;padding:0;margin:8px 0 0;display:flex;flex-wrap:wrap;gap:6px 18px}
-.site-footer .notice{background:none;padding:14px 0 0;text-align:left;border-top:1px solid #4a3f4e;margin-top:18px}
-@media (max-width:600px){body{font-size:16px}h1{font-size:27px}h2{font-size:22px}.brand-name{font-size:23px}.lede{font-size:17px}.scroll-hint{display:block}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheap Nails in Iowa City: Gel Manicure Prices | Glow on a Budget</title>
+  <meta name="description" content="Cheap nails in Iowa City, compared. Gel manicure prices, student days and walk-in nail salons near campus, all in one place.">
+  <style>
+    :root {
+      --bg: #fffaf9;
+      --bg-soft: #fff1f4;
+      --panel: #ffffff;
+      --panel-alt: #fdf2f6;
+      --ink: #241b2b;
+      --muted: #5f5366;
+      --stroke: #f2dfe6;
+      --rose: #b83d67;
+      --rose-deep: #8a2e4f;
+      --gold: #d6a643;
+      --green: #2a8c6b;
+      --shadow: 0 18px 40px rgba(35, 22, 31, 0.08);
+      --radius: 20px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: linear-gradient(180deg, #fffaf9 0%, #fffdfd 100%);
+    }
+
+    a { color: var(--rose); text-decoration: none; }
+    a:hover { color: var(--rose-deep); }
+    img { max-width: 100%; display: block; }
+
+    .container { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      background: rgba(255, 250, 249, 0.93);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--stroke);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      min-height: 82px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+      color: var(--ink);
+      text-decoration: none;
+      font-size: clamp(1.2rem, 1.2vw + 0.9rem, 2rem);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .brand-mark { color: var(--rose); }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-list a {
+      display: inline-block;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid var(--stroke);
+      background: rgba(255,255,255,0.75);
+      color: var(--ink);
+      font-size: 0.96rem;
+      font-weight: 600;
+      transition: 0.2s ease;
+    }
+
+    .nav-list a:hover,
+    .nav-list a[aria-current="page"] {
+      background: var(--rose);
+      color: white;
+      border-color: var(--rose);
+      box-shadow: 0 10px 25px rgba(184, 61, 103, 0.18);
+    }
+
+    main { padding: 28px 0 52px; }
+    .page-shell { padding-top: 6px; }
+
+    .page-head {
+      background: linear-gradient(135deg, rgba(255, 250, 251, 1), rgba(255, 241, 244, 0.7));
+      border: 1px solid var(--stroke);
+      border-radius: 28px;
+      padding: clamp(24px, 4vw, 42px);
+      box-shadow: var(--shadow);
+      margin-bottom: 26px;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia, "Times New Roman", serif;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      color: var(--ink);
+    }
+
+    h1 { font-size: clamp(2.3rem, 3.5vw, 3.6rem); margin: 0 0 12px; }
+    h2 { font-size: clamp(1.8rem, 2.4vw, 2.7rem); margin: 0 0 16px; }
+    h3 { font-size: clamp(1.15rem, 1.5vw, 1.45rem); margin: 0 0 10px; }
+
+    .eyebrow {
+      display: inline-block;
+      background: var(--panel-alt);
+      border: 1px solid var(--stroke);
+      color: var(--rose-deep);
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .lede {
+      color: var(--muted);
+      font-size: clamp(1.04rem, 1vw + 0.66rem, 1.3rem);
+      max-width: 70ch;
+    }
+
+    .updated {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--stroke);
+      border-radius: var(--radius);
+      padding: 22px;
+      box-shadow: 0 14px 30px rgba(35, 22, 31, 0.04);
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0 0 12px;
+    }
+
+    .price-tag {
+      display: inline-block;
+      margin-bottom: 10px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      background: var(--bg-soft);
+      border: 1px solid var(--stroke);
+      color: var(--rose-deep);
+      font-weight: 800;
+      font-size: 0.84rem;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--stroke);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: collapse;
+      background: white;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--stroke);
+      padding: 14px 16px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--bg-soft);
+      color: var(--rose-deep);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    tr:last-child td { border-bottom: none; }
+
+    .tip {
+      background: #fff9e8;
+      border-left: 4px solid var(--gold);
+      border-radius: 12px;
+      padding: 18px 20px;
+      color: #3a2d10;
+      margin: 26px 0;
+      box-shadow: 0 10px 24px rgba(214,166,67,0.08);
+    }
+
+    .tip strong { color: #7a5416; }
+
+    .list-box,
+    .faq-item {
+      background: rgba(255,255,255,0.9);
+      border: 1px solid var(--stroke);
+      border-radius: 18px;
+      padding: 20px;
+      box-shadow: 0 12px 26px rgba(35, 22, 31, 0.04);
+    }
+
+    .list-box ul,
+    .faq {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq {
+      margin-top: 16px;
+      display: grid;
+      gap: 18px;
+    }
+
+    .faq-item dt {
+      font-weight: 800;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .faq-item dd {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .site-footer {
+      background: #1e1720;
+      color: #f2e9ee;
+      padding: 32px 0 18px;
+      margin-top: 32px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 26px;
+      align-items: start;
+    }
+
+    .site-footer .brand { color: white; }
+    .site-footer p,
+    .site-footer li,
+    .site-footer a { color: rgba(242, 233, 238, 0.8); }
+
+    .site-footer ul {
+      list-style: none;
+      padding: 0;
+      margin: 14px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+    }
+
+    .site-footer .notice {
+      background: transparent;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      margin-top: 24px;
+      padding-top: 16px;
+      color: rgba(242, 233, 238, 0.8);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 820px) {
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 18px 0;
+      }
+
+      .nav-list {
+        justify-content: flex-start;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
-<p class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="index.html">
-      <span class="brand-name">Glow on a Budget</span>
-      <span class="brand-tag">A Student's Guide to Beauty Services in Iowa City</span>
-    </a>
-    <nav aria-label="Main">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cheap-beauty-services-iowa-city.html">Cheap Beauty Services</a></li>
-        <li><a href="lash-extensions-iowa-city.html">Lash Extensions</a></li>
-        <li><a href="spray-tan-iowa-city.html">Spray Tans</a></li>
-        <li><a href="nails-iowa-city.html" aria-current="page">Nails</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main class="wrap">
-  <h1>Cheap nails in Iowa City</h1>
-  <p class="lede">Cheap nails from Iowa City nail salons that take walk-ins between classes. We compared five nail salons on gel and regular manicure prices, student deals, walk-in waits and how far they are from the Pentacrest.</p>
-  <p class="updated">Prices checked by Jordan Okafor in November 2026. Prices are for a basic manicure before tip unless noted.</p>
-  <img class="hero-img" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NDAgMzAwIj48cmVjdCB3aWR0aD0iNjQwIiBoZWlnaHQ9IjMwMCIgcng9IjE4IiBmaWxsPSIjZmJlZWYyIi8+PGNpcmNsZSBjeD0iNTMwIiBjeT0iNzAiIHI9IjQwIiBmaWxsPSIjZjdjM2Q2Ii8+PGNpcmNsZSBjeD0iOTUiIGN5PSIyNDAiIHI9IjI4IiBmaWxsPSIjZjNkZGU2Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTUwLDQwKSI+PHBhdGggZD0iTTQwIDI2MCBDMzAgMTgwIDQwIDExMCA2MCA3MCBMMzMwIDcwIEMzNTAgMTEwIDM2MCAxODAgMzUwIDI2MCBaIiBmaWxsPSIjZjJkMmJkIi8+PGcgZmlsbD0iI2UxYjM5YyI+PHJlY3QgeD0iNjIiIHk9IjIwIiB3aWR0aD0iNTIiIGhlaWdodD0iMTIwIiByeD0iMjYiLz48cmVjdCB4PSIxMjQiIHk9IjAiIHdpZHRoPSI1NCIgaGVpZ2h0PSIxNDAiIHJ4PSIyNyIvPjxyZWN0IHg9IjE4OCIgeT0iNiIgd2lkdGg9IjU0IiBoZWlnaHQ9IjEzNCIgcng9IjI3Ii8+PHJlY3QgeD0iMjUyIiB5PSIzMCIgd2lkdGg9IjUwIiBoZWlnaHQ9IjExMCIgcng9IjI1Ii8+PC9nPjxnIGZpbGw9IiNkNjUxN2YiPjxyZWN0IHg9IjcwIiB5PSIyNiIgd2lkdGg9IjM2IiBoZWlnaHQ9IjQ2IiByeD0iMTgiLz48cmVjdCB4PSIxMzMiIHk9IjYiIHdpZHRoPSIzNiIgaGVpZ2h0PSI0OCIgcng9IjE4Ii8+PHJlY3QgeD0iMTk3IiB5PSIxMiIgd2lkdGg9IjM2IiBoZWlnaHQ9IjQ4IiByeD0iMTgiLz48cmVjdCB4PSIyNTkiIHk9IjM2IiB3aWR0aD0iMzYiIGhlaWdodD0iNDQiIHJ4PSIxOCIvPjwvZz48ZyBmaWxsPSIjZmZmIiBvcGFjaXR5PSIuNTUiPjxyZWN0IHg9Ijc4IiB5PSIzMiIgd2lkdGg9IjgiIGhlaWdodD0iMjAiIHJ4PSI0Ii8+PHJlY3QgeD0iMTQxIiB5PSIxMiIgd2lkdGg9IjgiIGhlaWdodD0iMjIiIHJ4PSI0Ii8+PHJlY3QgeD0iMjA1IiB5PSIxOCIgd2lkdGg9IjgiIGhlaWdodD0iMjIiIHJ4PSI0Ii8+PHJlY3QgeD0iMjY3IiB5PSI0MiIgd2lkdGg9IjgiIGhlaWdodD0iMjAiIHJ4PSI0Ii8+PC9nPjwvZz48ZyBmaWxsPSIjYTMzMTVjIj48cGF0aCBkPSJNNTYwIDE5MCBsNiAxNCAxNCA2IC0xNCA2IC02IDE0IC02IC0xNCAtMTQgLTYgMTQgLTZ6Ii8+PHBhdGggZD0iTTgwIDcwIGw0IDkgOSA0IC05IDQgLTQgOSAtNCAtOSAtOSAtNCA5IC00eiIvPjwvZz48L3N2Zz4K" alt="Fresh pink gel manicure, the most booked student nail service in Iowa City" width="640" height="300">
-
-  <h2>Gel manicure price in Iowa City</h2>
-  <p>A gel manicure price in Iowa City runs from $25 on a student deal day to about $50 at a high-end studio. A regular polish manicure costs $18 to $28. Gel costs more up front, but it is cured under a lamp and stays glossy for two to three weeks, while regular polish usually chips within a week.</p>
-  <div class="cards">
-    <div class="card">
-      <h3>Regular polish</h3>
-      <p>Classic nail polish that air-dries. The cheapest option, easy to remove at home, and a good choice if you like changing colors every few days.</p>
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html"><span class="brand-mark">Glow</span> on a Budget</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cheap-beauty-services-iowa-city.html">Cheap Beauty Services</a></li>
+          <li><a href="lash-extensions-iowa-city.html">Lash Extensions</a></li>
+          <li><a href="spray-tan-iowa-city.html">Spray Tans</a></li>
+          <li><a href="nails-iowa-city.html" aria-current="page">Nails</a></li>
+        </ul>
+      </nav>
     </div>
-    <div class="card">
-      <h3>Gel manicure</h3>
-      <p>Gel polish cured under an LED lamp. Dry the moment you leave and lasts two to three weeks. Needs a proper soak-off to remove.</p>
+  </header>
+
+  <main class="container page-shell">
+    <section class="page-head">
+      <div class="eyebrow">Nail guide</div>
+      <h1>Cheap nails in Iowa City</h1>
+      <p class="lede">Cheap nails from Iowa City nail salons that take walk-ins between classes. We compared five nail salons on gel and regular manicure prices, student deals, walk-in waits and how far they are from the Pentacrest.</p>
+      <div class="updated">Prices checked by Jordan Okafor in November 2026. Prices are for a basic manicure before tip unless noted.</div>
+    </section>
+
+    <section>
+      <h2>Gel manicure price in Iowa City</h2>
+      <p style="color: var(--muted);">A gel manicure price in Iowa City runs from $25 on a student deal day to about $50 at a high-end studio. A regular polish manicure costs $18 to $28. Gel costs more up front, but it stays glossy and durable for two to three weeks.</p>
+    </section>
+
+    <section style="margin-top:26px;">
+      <h2>What to choose</h2>
+      <div class="cards">
+        <article class="card"><h3>Regular polish</h3><p>Classic and inexpensive, but it usually chips within a week.</p></article>
+        <article class="card"><h3>Gel manicure</h3><p>Dry the moment you leave and lasts two to three weeks.</p></article>
+        <article class="card"><h3>Dip powder</h3><p>Strong and long-lasting, but often $5 to $10 more than gel.</p></article>
+        <article class="card"><h3>Pedicure</h3><p>A basic pedicure runs $35 to $55; a gel top coat often adds another $10.</p></article>
+      </div>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>Iowa City nail salons compared</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Nail salon</th>
+              <th>Gel manicure</th>
+              <th>Regular manicure</th>
+              <th>Student deal</th>
+              <th>Walk-ins</th>
+              <th>Distance from Pentacrest</th>
+              <th>Glow Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Polished Pentacrest Nail Bar</strong><br>Downtown</td><td>$30</td><td>$18</td><td>$25 gel on Tuesdays, free nail art accent after five visits</td><td>Yes, weekdays, about a 20-minute wait</td><td>0.2 mi</td><td>4.6</td></tr>
+            <tr><td><strong>Northside Nail Studio</strong><br>Northside</td><td>$38</td><td>$22</td><td>$5 off any service with student ID</td><td>No, book a day ahead</td><td>0.9 mi</td><td>4.7</td></tr>
+            <tr><td><strong>Clinton Street Polish Bar</strong><br>Downtown</td><td>$42</td><td>$25</td><td>Free gel removal for students</td><td>Limited, call ahead</td><td>0.3 mi</td><td>4.4</td></tr>
+            <tr><td><strong>Coral Ridge Beauty Bar</strong><br>Coralville</td><td>$34</td><td>$20</td><td>10% off any service</td><td>Yes, weekdays before 3 p.m.</td><td>4.1 mi</td><td>4.3</td></tr>
+            <tr><td><strong>Lacquer Lab</strong><br>East side</td><td>$50</td><td>$28</td><td>None</td><td>Appointment only</td><td>2.2 mi</td><td>4.5</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>Our picks</h2>
+      <div class="cards">
+        <article class="card"><h3>Best value near campus: Polished Pentacrest</h3><span class="price-tag">$25 gel on Tuesdays</span><p>Two blocks from class and the cheapest gel manicure in town on its student day.</p></article>
+        <article class="card"><h3>Best overall: Northside Nail Studio</h3><span class="price-tag">$33 gel with student ID</span><p>Clean, careful work and a polished experience. Ideal if you’re willing to book a day ahead.</p></article>
+        <article class="card"><h3>Best if you're at the mall: Coral Ridge</h3><span class="price-tag">About $31 gel with 10% off</span><p>A good pick if you are already in Coralville and want a walk-in-friendly option.</p></article>
+      </div>
+    </section>
+
+    <div class="tip"><strong>Do the semester math:</strong> A 15-week semester of gel nails means about five sets, one every three weeks. At Polished Pentacrest on Tuesdays, that’s $125 plus tips. Regular polish every week at $18 adds up to $270 plus tips, so gel is the more affordable habit if you want nails done all semester.</div>
+
+    <section style="margin-top:28px;">
+      <h2>How to make a gel manicure last</h2>
+      <div class="list-box">
+        <ul style="padding-left:20px; list-style:disc;">
+          <li>Rub cuticle oil into your nails every night.</li>
+          <li>Wear gloves for dishes and cleaning.</li>
+          <li>Use your fingertips, not your nails, to open cans or peel stickers.</li>
+          <li>Never peel gel off. It strips layers of your natural nail.</li>
+          <li>Book a proper soak-off when you are done; most salons charge $5 to $10.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>Signs of a clean nail salon</h2>
+      <div class="list-box">
+        <ul style="padding-left:20px; list-style:disc;">
+          <li>Metal tools come out of a sealed pouch or sterilizer, not a drawer.</li>
+          <li>Files and buffers are new for each client or discarded after use.</li>
+          <li>Pedicure tubs have disposable liners or are scrubbed between clients.</li>
+          <li>Each technician’s Iowa license is on display.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section style="margin-top:28px;">
+      <h2>Frequently asked questions</h2>
+      <dl class="faq">
+        <div class="faq-item">
+          <dt>What is the cheapest nail salon near the University of Iowa?</dt>
+          <dd>Polished Pentacrest Nail Bar, with a $25 gel manicure on Tuesdays and an $18 regular manicure any day.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>Can I walk into a nail salon in Iowa City without an appointment?</dt>
+          <dd>Yes, at Polished Pentacrest on weekdays and at Coral Ridge before 3 p.m. Downtown salons get busy on Fridays and before formals, so call ahead.</dd>
+        </div>
+        <div class="faq-item">
+          <dt>How much should I tip for a manicure?</dt>
+          <dd>Between 15 and 20 percent of the full price is standard. On a $30 gel manicure, that’s about $5 to $6.</dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><span class="brand-mark">Glow</span> on a Budget</a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cheap-beauty-services-iowa-city.html">Cheap Beauty Services</a></li>
+          <li><a href="lash-extensions-iowa-city.html">Lash Extensions</a></li>
+          <li><a href="spray-tan-iowa-city.html">Spray Tans</a></li>
+          <li><a href="nails-iowa-city.html">Nails</a></li>
+        </ul>
+      </div>
+      <div>
+        <p>Keep your nails polished without paying premium salon prices.</p>
+      </div>
     </div>
-    <div class="card">
-      <h3>Dip powder</h3>
-      <p>Colored powder sealed onto the nail. Lasts up to four weeks and is very strong, but usually costs $5 to $10 more than gel.</p>
-    </div>
-    <div class="card">
-      <h3>Pedicure</h3>
-      <p>A basic pedicure runs $35 to $55 in Iowa City. Most salons add gel polish to a pedicure for about $10 more.</p>
-    </div>
-  </div>
-
-  <h2>Iowa City nail salons compared</h2>
-  <p class="scroll-hint">Swipe sideways to see the whole table.</p>
-  <div class="table-scroll">
-    <table>
-      <thead>
-        <tr>
-          <th>Nail salon</th>
-          <th>Gel manicure</th>
-          <th>Regular manicure</th>
-          <th>Student deal</th>
-          <th>Walk-ins</th>
-          <th>Distance from Pentacrest</th>
-          <th>Glow Score</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Polished Pentacrest Nail Bar</strong><br>Downtown</td>
-          <td>$30</td>
-          <td>$18</td>
-          <td>$25 gel on Tuesdays, free nail art accent after five visits</td>
-          <td>Yes, weekdays, about a 20-minute wait</td>
-          <td>0.2 mi</td>
-          <td>4.6</td>
-        </tr>
-        <tr>
-          <td><strong>Northside Nail Studio</strong><br>Northside</td>
-          <td>$38</td>
-          <td>$22</td>
-          <td>$5 off any service with student ID</td>
-          <td>No, book a day ahead</td>
-          <td>0.9 mi</td>
-          <td>4.7</td>
-        </tr>
-        <tr>
-          <td><strong>Clinton Street Polish Bar</strong><br>Downtown</td>
-          <td>$42</td>
-          <td>$25</td>
-          <td>Free gel removal for students</td>
-          <td>Limited, call ahead</td>
-          <td>0.3 mi</td>
-          <td>4.4</td>
-        </tr>
-        <tr>
-          <td><strong>Coral Ridge Beauty Bar</strong><br>Coralville</td>
-          <td>$34</td>
-          <td>$20</td>
-          <td>10% off any service</td>
-          <td>Yes, weekdays before 3 p.m.</td>
-          <td>4.1 mi</td>
-          <td>4.3</td>
-        </tr>
-        <tr>
-          <td><strong>Lacquer Lab</strong><br>East side</td>
-          <td>$50</td>
-          <td>$28</td>
-          <td>None</td>
-          <td>Appointment only</td>
-          <td>2.2 mi</td>
-          <td>4.5</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h2>Our picks</h2>
-  <div class="cards">
-    <div class="card">
-      <h3>Best value near campus: Polished Pentacrest Nail Bar</h3>
-      <p><span class="price-tag">$25 gel on Tuesdays</span></p>
-      <p>Two blocks from class and the cheapest gel manicure in town on its student day. Walk-ins are welcome on weekdays, so it fits a long break between lectures.</p>
-    </div>
-    <div class="card">
-      <h3>Best overall: Northside Nail Studio</h3>
-      <p><span class="price-tag">$33 gel with student ID</span></p>
-      <p>The most careful work we saw, with clean, sealed tools at every station. Book a day ahead, because the technicians are rarely free for walk-ins.</p>
-    </div>
-    <div class="card">
-      <h3>Best if you are at the mall: Coral Ridge Beauty Bar</h3>
-      <p><span class="price-tag">About $31 gel with 10% off</span></p>
-      <p>Worth it if you are already in Coralville. The bus ride is free with a student ID, and weekday walk-ins before 3 p.m. are usually seen within half an hour.</p>
-    </div>
-  </div>
-
-  <div class="tip"><strong>Do the semester math:</strong> A 15-week semester of gel nails means about five sets, one every three weeks. At Polished Pentacrest on Tuesdays that is $125 plus tips. Regular polish redone every week at $18 adds up to $270 plus tips, so gel is the cheaper habit if you want your nails done all semester.</div>
-
-  <h2>How to make a gel manicure last</h2>
-  <ul>
-    <li>Rub cuticle oil into your nails every night. Dry cuticles lift the gel at the edges.</li>
-    <li>Wear gloves for dishes and cleaning. Hot water and soap weaken gel faster than anything else.</li>
-    <li>Use your fingertips, not your nails, to open cans and peel stickers.</li>
-    <li>Never peel gel off. It takes layers of your natural nail with it, and repairs cost more than a removal.</li>
-    <li>Book a proper soak-off when you are done. Most salons charge $5 to $10, and Clinton Street Polish Bar does it free for students.</li>
-  </ul>
-
-  <h2>Signs of a clean nail salon</h2>
-  <ul>
-    <li>Metal tools come out of a sealed pouch or a sterilizer, not a drawer.</li>
-    <li>Files and buffers are new for each client or thrown away after use.</li>
-    <li>Pedicure tubs have disposable liners or are scrubbed between clients.</li>
-    <li>Each technician's Iowa license is on display. If you cannot see one, ask.</li>
-  </ul>
-
-  <h2>Frequently asked questions</h2>
-  <dl class="faq">
-    <dt>What is the cheapest nail salon near the University of Iowa?</dt>
-    <dd>Polished Pentacrest Nail Bar, with a $25 gel manicure on Tuesdays and an $18 regular manicure any day. It is about a two-minute walk from the Pentacrest.</dd>
-    <dt>Can I walk into a nail salon in Iowa City without an appointment?</dt>
-    <dd>Yes, at Polished Pentacrest Nail Bar on weekdays and at Coral Ridge Beauty Bar before 3 p.m. Downtown salons get busy on Fridays and before formals, so call ahead those days.</dd>
-    <dt>How much should I tip for a manicure?</dt>
-    <dd>Between 15 and 20 percent of the full price is standard. On a $30 gel manicure, that is about $5 to $6, even if you paid the student price.</dd>
-    <dt>How long does a gel manicure take?</dt>
-    <dd>About 45 minutes to an hour, or a little longer if old gel has to be removed first.</dd>
-  </dl>
-
-  <p>Want to save on lashes, tans or brows too? See our <a href="cheap-beauty-services-iowa-city.html">cheap beauty services roundup</a>, our <a href="lash-extensions-iowa-city.html">lash extension comparison</a> and our <a href="spray-tan-iowa-city.html">spray tan guide</a>.</p>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <strong>Glow on a Budget</strong>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="cheap-beauty-services-iowa-city.html">Cheap Beauty Services</a></li>
-      <li><a href="lash-extensions-iowa-city.html">Lash Extensions</a></li>
-      <li><a href="spray-tan-iowa-city.html">Spray Tans</a></li>
-      <li><a href="nails-iowa-city.html">Nails</a></li>
-    </ul>
-    <p class="notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</p>
-  </div>
-</footer>
+    <div class="container notice">This is a fictional website created for educational purposes as part of MKTG:4400 at the University of Iowa. It is not a real business.</div>
+  </footer>
 </body>
 </html>
