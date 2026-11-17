@@ -123,5 +123,5 @@ The home page `index.html` (version A) will not be edited from launch until the 
 Any change after launch is logged here with its date and reason.
 
 | Date | What changed | Why |
-|---|---|---|
+| 17 Nov 2026 | Version B launched one day later than planned | Still within the 17 November deadline, no other changes |
 | | | |
